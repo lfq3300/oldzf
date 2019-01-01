@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<loading hidden="{{!loginhidde}}">
+        页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+<view class="logo-view">
+  <navigator url="/pages/index/index" open-type="switchTab">
+    <view class="logo-box">
+      <image class='logo-img' src='/images/icons/logo.png' mode="widthFix"></image>
+    </view>
+  </navigator>
+</view>
+<view class='page padding-border'>
+  <view class='content'>
+    <view class='img-one'>
+      <view bindtap='oneActivityTabBar'>
+        <image src='{{arr[0].url}}' mode="widthFix"></image>
+        <view class='img-text flex-column'>
+          <image class='icon' src='/images/icons/home_icon.png' mode="widthFix"></image>
+          <text>{{arr[0].name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='img-two'>
+      <view bindtap='twoActivityTabBar'>
+        <image class='bg' src='{{arr[1].url}}' mode="widthFix"></image>
+        <view class='img-text flex-column'>
+          <image class='icon' src='/images/icons/home_icon.png' mode="widthFix"></image>
+          <text>{{arr[1].name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='img-three'>
+       <view class="threenav" bindtap='threeActivityTabBar'>
+        <view class='three-box'>
+          <image class='bg' src='{{arr[2].url}}' mode="widthFix"></image>
+        </view>
+        <view class='img-text flex-column'>
+          <image class='icon' src='/images/icons/home_icon.png' mode="widthFix"></image>
+          <text>{{arr[2].name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='img-four'>
+      <navigator url='/pages/video/index?video={{arr[3].videoUrl}}&img={{item.url}}'>
+        <image class='bg' src='{{arr[3].url}}' mode="widthFix"></image>
+        <view class='img-text flex-column'>
+          <image class='icon' src='/images/icons/big_play.png' mode="widthFix"></image>
+          <text>{{arr[3].name}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+</view>

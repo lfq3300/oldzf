@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/survey/index",
+    "pages/survey/survey",
+    "pages/carlist/activelist",
+    "pages/video/index",
+    "pages/service/service",
+    "pages/appointment/index",
+    "pages/investigation/index",
+    "pages/yysj/index",
+    "pages/activity/activity",
+    "pages/personal/personal",
+    "pages/servicepro/index",
+    "pages/userinfo/index",
+    "pages/success/index",
+    "pages/exper/exper",
+    "pages/carlist/details",
+    "pages/activity/activitypage",
+    "pages/carlist/carlist",
+    "pages/activity/activitypage2",
+    "pages/carlist/detailsactive",
+    "pages/help/help",
+    "pages/waiter/waiter",
+    "pages/webViewPage/webViewPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#121314",
+    "navigationBarTitleText": "仁孚中国",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#A5A5A5",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#121314",
+    "list": [
+      {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "images/icons/activity_nor.png",
+        "selectedIconPath": "images/icons/activity_sel.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/survey/index",
+        "iconPath": "images/icons/service_nor.png",
+        "selectedIconPath": "images/icons/service_sel.png",
+        "text": "问卷调查"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/home_nor.png",
+        "selectedIconPath": "images/icons/home_sel.png",
+        "text": "仁孚"
+      },
+      {
+        "pagePath": "pages/carlist/activelist",
+        "iconPath": "images/icons/exper_nor.png",
+        "selectedIconPath": "images/icons/exper_sel.png",
+        "text": "体验"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/icons/mine_nor.png",
+        "selectedIconPath": "images/icons/mine_sel.png",
+        "text": "我"
+      }
+    ]
+  }
+}

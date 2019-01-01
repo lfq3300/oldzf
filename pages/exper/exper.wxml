@@ -1,0 +1,15 @@
+<!--pages/exper/exper.wxml-->
+<view class='s'>你好</view>
+<view class='w'>你好</view>
+<view class='d'>你好</view>
+<view class='m'>你好</view>
+
+<view class='s'>123456</view>
+<view class='w'>123456</view>
+<view class='d'>123456</view>
+<view class='m'>123456</view>
+
+<view class='s'>ABCDEFG</view>
+<view class='w'>ABCDEFG</view>
+<view class='d'>ABCDEFG</view>
+<view class='m'>ABCDEFG</view>

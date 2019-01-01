@@ -1,0 +1,45 @@
+/* pages/yysj/index.wxss */
+
+page {
+  background: #ccc;
+}
+
+.banner {
+  width: 100%;
+}
+
+.content {
+  background: #fff;
+  padding-bottom: 125rpx;
+}
+
+.content2{
+  margin-top: 20rpx;
+}
+.content2 .section{
+  border: none;
+}
+.btn{
+  background: #fff;
+  padding-top: 40rpx;
+  padding-bottom: 100rpx;
+}
+.btn button{
+  height: 94rpx;
+  line-height: 94rpx;
+}
+.content2 .content{
+  padding-bottom: 0;
+}
+
+.weui-input{
+  height: 95rpx;
+  overflow: hidden;
+  padding-right: 40rpx;
+}
+.timeselect2{
+  padding-left: 40rpx;
+}
+.timeselect{
+  line-height: 96rpx;
+}

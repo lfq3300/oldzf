@@ -1,0 +1,5 @@
+<!--pages/service/service.wxml-->
+<view class='defaultpage'>
+  <image class='defaulticon'  src='/images/icons/default.png' mode="widthFix"></image>
+  <text>更多功能正在开发中</text>
+</view>

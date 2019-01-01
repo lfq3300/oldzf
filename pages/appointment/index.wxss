@@ -1,0 +1,61 @@
+/* pages/appointment/index.wxss */
+page{
+  background:#F4F4F4;
+  font-size: 28rpx;
+  font-family: "MYingHeiPRC-W4";
+}
+.header{
+  height: 88rpx;
+  background: #FFF;
+}
+.header-item{
+  text-align: center;
+  color: #999;
+}
+.header-item text{
+  line-height: 88rpx;
+  display: inline-block;
+  height: 83rpx;
+}
+.select-item text{
+  color:#333;
+  border-bottom: 5rpx solid #121314;
+}
+.content-tiem{
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+.content-title image{
+  vertical-align: middle;
+  width: 35rpx;
+  height: 27rpx;
+  padding-right: 13rpx;
+}
+.content-title{
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #E4E4E4;
+}
+.content{
+  padding-left: 35rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+.content view{
+  line-height: 50rpx;
+  height: 50rpx;
+}
+.content text{
+  font-size: 24rpx;
+  color: #666666;
+}
+.content .flex1{
+  text-align: right;
+}
+.content-box {
+  display: none;
+}
+.content-box.select-box{
+  display: block;
+}

@@ -1,0 +1,111 @@
+.page {
+  height: auto;
+  padding-bottom: 20rpx;
+}
+
+.content {
+  margin-top: 50rpx;
+  width: 100%;
+  position: relative;
+  height: 1126rpx;
+  overflow: hidden;
+}
+
+.content >view {
+  overflow: hidden;
+  position: absolute;
+}
+.img-two,.img-three.img-four{
+  box-shadow: 5rpx 5rpx 10rpx #fff;
+}
+/*专门为第三个图片设立的*/
+.three-box{
+  box-shadow: -3rpx -3rpx 10rpx #fff;
+}
+
+.img-one {
+  top: 0rpx;
+  left: 0rpx;
+  width: 53.64%;
+  box-shadow: initial;
+}
+
+.img-one image{
+  width: 100%;
+}
+.img-one > navigator > image{
+ box-shadow: 5rpx 5rpx 10rpx #fff; 
+}
+.img-two {
+  top: 45rpx;
+  right: 0rpx;
+  width: 46.35%;
+  height: 383rpx;
+}
+
+.img-two image {
+  padding-left: 8rpx;
+  width: 100%;
+}
+
+.img-three {
+  top: 419rpx;
+  right: 0rpx;
+  width: 500rpx;
+  height: 340rpx;
+  background: #fff;
+}
+
+.img-three .threenav {
+  padding-top: 8rpx;
+  padding-left: 8rpx;
+}
+
+.img-three image {
+  width: 500rpx;
+}
+
+.img-four {
+  width: 690rpx;
+  height: 340rpx;
+  right: 0rpx;
+  top: 758rpx;
+  padding-top: 8rpx;
+}
+
+.img-four image {
+  width: 690rpx;
+}
+
+
+.bg {
+  box-shadow: 5rpx 5rpx 10rpx #999;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  font-family: "MYingHeiPRC-W4";
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.img-text text {
+  margin-top: 18rpx;
+}
+
+.img-text .icon {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.img-four .img-text  .icon{
+  width:96rpx;
+}
+
+.userInfo{
+  width: 
+}

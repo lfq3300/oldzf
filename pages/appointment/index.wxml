@@ -1,0 +1,156 @@
+<loading hidden="{{!loginhidde}}">
+  页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+  <view class="header flex-default">
+    <view class="flex1 header-item  {{_type == 1?'select-item':''}}'" data-type="1" bindtap="bindTypeChange">
+      <text>全部</text>
+    </view>
+    <view class="flex1 header-item {{_type == 2?'select-item':''}}'" data-type="2" bindtap="bindTypeChange">
+      <text>预约试驾</text>
+    </view>
+    <view class="flex1 header-item {{_type == 3?'select-item':''}}'" data-type="3" bindtap="bindTypeChange">
+      <text>售后保养</text>
+    </view>
+    <view class="flex1 header-item {{_type == 4?'select-item':''}}'" data-type="4" bindtap="bindTypeChange">
+      <text>活动报名</text>
+    </view>
+  </view>
+  <view class="content-box {{_type == 1?'select-box':''}}'">
+    <view wx:for="{{all}}" wx:for-item="item">
+      <view wx:if="{{item.type == '100000001'}}">
+        <view class="content-tiem padding-border">
+          <view class="content-title">
+            <image src="/images/icons/reserve_icon_reserve_pressed.png" mode='widthFix'></image>
+            预约试驾
+          </view>
+          <view class="content">
+            <view class="flex-default">
+              <text>4s店地址</text>
+              <text class='flex1'>{{item.dealerIdName}}</text>
+            </view>
+            <view class="flex-default">
+              <text>预约时间</text>
+              <text class='flex1'>{{item.date}}</text>
+            </view>
+            <view class="flex-default">
+              <text>预约人员</text>
+              <text class='flex1'>{{item.name}} {{item.tel}}</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view wx:elif="{{item.type == '100000002'}}">
+        <view class="content-tiem padding-border">
+          <view class="content-title">
+            <image src="/images/icons/reserve_icon_activity_pressed.png" mode='widthFix'></image>
+            活动信息
+          </view>
+          <view class="content">
+            <view class="flex-default">
+              <text>地址</text>
+              <text class='flex1'>{{item.dealerIdName}}</text>
+            </view>
+            <view class="flex-default">
+              <text>时间</text>
+              <text class='flex1'>{{item.date}}</text>
+            </view>
+            <view class="flex-default">
+               <text>预约人员</text>
+              <text class='flex1'>{{item.name}} {{item.tel}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:elif="{{item.type == '100000003'}}">
+        <view class="content-tiem padding-border">
+          <view class="content-title">
+            <image src="/images/icons/reserve_icon_repair_pressed.png" mode='widthFix'></image>
+            维修保养
+          </view>
+          <view class="content">
+            <view class="flex-default">
+              <text>4s店地址</text>
+              <text class='flex1'>北京朝阳区宇宙火星村134号</text>
+            </view>
+            <view class="flex-default">
+              <text>预约时间</text>
+              <text class='flex1'>{{item.date}}</text>
+            </view>
+            <view class="flex-default">
+              <text>销售专员</text>
+              <text class='flex1'>李汉明 13713248873</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content-box {{_type == 2?'select-box':''}}'">
+    <view class="content-tiem padding-border" wx:for="{{yysj}}" wx:for-item="item">
+      <view class="content-title">
+        <image src="/images/icons/reserve_icon_reserve_pressed.png" mode='widthFix'></image>
+        预约试驾
+      </view>
+      <view class="content">
+        <view class="flex-default">
+          <text>4s店地址</text>
+          <text class='flex1'>{{item.dealerIdName}}</text>
+        </view>
+        <view class="flex-default">
+          <text>预约时间</text>
+          <text class='flex1'>{{item.date}}</text>
+        </view>
+        <view class="flex-default">
+          <text>预约人员</text>
+          <text class='flex1'>{{item.name}} {{item.tel}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content-box {{_type == 3?'select-box':''}}'" >
+    <view class="content-tiem padding-border" wx:for="{{afterSale}}" wx:for-item="item">
+      <view class="content-title">
+        <image src="/images/icons/reserve_icon_repair_pressed.png" mode='widthFix'></image>
+        维修保养
+      </view>
+      <view class="content">
+        <view class="flex-default">
+          <text>4s店地址</text>
+           <text class='flex1'>{{item.dealerIdName}}</text>
+        </view>
+        <view class="flex-default">
+          <text>预约时间</text>
+          <text class='flex1'>{{item.date}}</text>
+        </view>
+        <view class="flex-default">
+         <text>预约人员</text>
+          <text class='flex1'>{{item.name}} {{item.tel}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content-box {{_type == 4?'select-box':''}}'">
+    <view class="content-tiem padding-border"  wx:for="{{activity}}" wx:for-item="item">
+      <view class="content-title">
+        <image src="/images/icons/reserve_icon_activity_pressed.png" mode='widthFix'></image>
+        活动信息
+      </view>
+      <view class="content">
+        <view class="flex-default">
+          <text>4s店地址</text>
+           <text class='flex1'>{{item.dealerIdName}}</text>
+        </view>
+        <view class="flex-default">
+          <text>时间</text>
+          <text class='flex1'>{{item.date}}</text>
+        </view>
+        <view class="flex-default">
+           <text>预约人员</text>
+          <text class='flex1'>{{item.name}} {{item.tel}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+/* pages/exper/exper.wxss */
+@font-face
+{
+  font-family: "MYingHeiPRC-W3";
+  src: url('http://www.luofq.com/font/MYingHeiPRC-W3.otf'),
+}
+
+@font-face
+{
+  font-family: "MYingHeiPRC-W4";
+  src: url('http://www.luofq.com/font/MYingHeiPRC-W4.otf'),
+}
+
+.m{
+  font-family: "MYingHeiPRC-W3"
+}
+
+.w{
+  font-family: "微软雅黑"
+}
+
+.s{
+  font-family: "宋体"
+}

@@ -1,0 +1,61 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx4d69fe23e65ae0ca",
+	"projectname": "zungfuChina",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "问卷调查",
+					"pathName": "pages/survey/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "问卷",
+					"pathName": "pages/survey/survey",
+					"query": "id=2&title=仁孚中国腾势客户调查问卷"
+				},
+				{
+					"id": 2,
+					"name": "试驾",
+					"pathName": "pages/yysj/index",
+					"query": "id=124&cartype=true&categoryid=125"
+				},
+				{
+					"id": -1,
+					"name": "个人",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				}
+			]
+		}
+	}
+}

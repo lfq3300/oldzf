@@ -1,0 +1,41 @@
+<!--pages/investigation/index.wxml-->
+<view class='title'>问卷调标题</view>
+<form bindsubmit="formSubmit" bindreset="formReset" id="appointment">
+<view class='padding-border'>
+  <view class='section flex-default'>
+    <text class='sec-left'>姓名*</text>
+    <input name="username" class='flex1' placeholder-class="plc" placeholder="请填写您的姓名"></input>
+  </view>
+  <view class='section flex-default'>
+    <text class='sec-left'>称谓</text>
+    <view class='flex1 sex flex-default radio-box'>
+      <view class='radio-item {{_sex == 1?"select":""}}' data-sex="1" bindtap="bindSexChange">
+        <image src='/images/icons/Unselected_icon_n.png' class='radio-icon unicon'></image>
+        <image src='/images/icons/Selected_icon_n.png' class='radio-icon seicon'></image>先生</view>
+      <view class='radio-item {{_sex == 2?"select":""}}' data-sex="2" bindtap="bindSexChange">
+        <image src='/images/icons/Unselected_icon_n.png' class='radio-icon unicon'></image>
+        <image src='/images/icons/Selected_icon_n.png' class='radio-icon seicon'></image>
+        女士</view>
+    </view>
+  </view>
+  <view class='section flex-default'>
+    <text class='sec-left'>电话*</text>
+    <input class='flex1' name="tel" placeholder-class="plc" placeholder="请填写您的电话号码"></input>
+  </view>
+  <view class='section flex-default'>
+      <text class='sec-left'>邮箱</text>
+      <input class='flex1' name="email" placeholder-class="plc" placeholder="请填写您的邮箱信息"></input>
+  </view>
+  <view class='section flex-default'>
+      <text class='sec-left'>您购买的车型</text>
+      <input class='flex1' name="email" placeholder-class="plc" placeholder="请填写您的车型信息"></input>
+  </view>
+  <view class='section section-textarea flex-column'>
+      <text class='sec-left'>意见反馈</text>
+      <textarea placeholder='请输入您的意见反馈' placeholder-class="plc"></textarea>
+  </view>
+   <view class='btn padding-border'>
+      <button class='defaultbtn' formType="submit">提交</button>
+   </view>
+</view>
+</form>

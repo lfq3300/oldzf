@@ -1,0 +1,16 @@
+<!--pages/carlist/details.wxml-->
+<loading hidden="{{!loginhidde}}">
+  页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+<view class='flex-column img-box'>
+  <image  src='{{imgurl}}' mode='widthFix'></image>
+  <view class="padding-border">
+    <import src="../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:accontent.nodes}}"/>
+  </view>
+</view>
+<button class='defaultbtn' bindtap='navyysj'>
+  预约试驾
+</button>
+</view>

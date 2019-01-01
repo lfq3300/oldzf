@@ -1,0 +1,2 @@
+<!--pages/webViewPage/webViewPage.wxml-->
+<web-view src="https://mp.weixin.qq.com/s/KaPRKjxkMRB3qAWySmZlSw">跳转</web-view>

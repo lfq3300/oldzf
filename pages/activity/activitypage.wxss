@@ -1,0 +1,33 @@
+/* pages/activity/activitypage.wxss */
+page{
+  background: #F0F0F0;
+}
+.img-box{
+  background: #FFF;
+  margin-bottom: 20rpx;
+}
+.aimg{
+  width: 100%;
+}
+.atext{
+  padding-left: 41rpx;
+  padding-right: 24rpx;
+  padding-bottom: 81rpx;
+  padding-top: 81rpx;
+  font-size: 24rpx;
+  color: #333;
+  font-family: "M Ying Hei PRC"
+}
+.content{
+  background: #FFF;
+}
+button{
+  margin-top:35rpx;
+  width: 202rpx;
+  height:66rpx;
+  line-height: 66rpx;
+  margin-bottom: 50rpx;
+}
+.activicytext{
+  padding-bottom: 20rpx;
+}

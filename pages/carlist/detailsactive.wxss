@@ -1,0 +1,70 @@
+/* pages/carlist/details.wxss */
+.padding-border image{
+  width: 100%!important;
+  margin-top: 50rpx;
+}
+.banner-img{
+  width: 100%;
+}
+button{
+  width: 202rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  position: fixed;
+  bottom:32rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-banener{
+  width: 100%;
+  height:312rpx;
+  overflow: hidden; 
+}
+.title{
+  color: #333;
+  font-size:32rpx;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.btntitle{
+  height: 88rpx;
+}
+.btntitle text{
+  color: #333;
+  font-size:24rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+swiper{
+  height: 490rpx;
+}
+.jg{
+  height: 20rpx;
+  width: 100%;
+  background: #F0F0F0; 
+}
+.padding-border{
+  padding-top: 20rpx;
+  padding-bottom: 50rpx;
+}
+.banner{
+  position: relative;
+}
+.bicon{
+  position: absolute;
+  width:40rpx;
+  height: 70rpx;
+  top:211rpx;
+}
+.bleft{
+  left:80rpx;
+}
+.bright{
+  right:80rpx;
+}
+.nullinfo{
+  margin-top: 50rpx;
+  text-align: center;
+}

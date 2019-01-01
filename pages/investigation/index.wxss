@@ -1,0 +1,33 @@
+/* pages/investigation/index.wxss */
+.title{
+  padding-top: 53rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-family: "MYingHeiPRC-W5";
+}
+.padding-border{
+  padding-top: 40rpx;
+}
+.section-textarea{
+  height: initial;
+  border-bottom: none;
+}
+.section-textarea textarea{
+  background: #FBFBFB;
+  width: 100%;
+  color: #999;
+  font-size: 28rpx;
+  padding: 20rpx;
+  height: 200rpx;
+  box-sizing: border-box;
+  border:1rpx solid #E4E4E4;
+}
+.plc{
+  color: #CCCCCC;
+}
+.defaultbtn{
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 200rpx;
+  margin-top: 100rpx;
+}

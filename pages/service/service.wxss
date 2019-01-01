@@ -1,0 +1,4 @@
+/* pages/service/service.wxss */
+.intro{
+    font-family: 'MYingHeiPRC-W3';
+}

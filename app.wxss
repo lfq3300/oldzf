@@ -1,0 +1,169 @@
+/**app.wxss**/
+.logo-view{
+  width: 100%;
+  height: 120rpx;
+  background: #121314;
+}
+.logo-box{
+  padding-top: 14rpx;
+  padding-left: 38rpx;
+  width: 501rpx;
+  height: 92rpx;
+  overflow: hidden;
+}
+.logo-img{
+   width: 100%;
+}
+
+.padding-border{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  overflow: hidden;
+}
+
+.flex-default{
+  display: -webkit-flex;  
+  display: flex;
+}
+.flex-column{
+  display: -webkit-flex;  
+  display: flex;
+  flex-direction: column;
+}
+.flex1{
+  flex: 1;
+}
+.flex-justify-content-end{
+  justify-content:flex-end;
+}
+.section {
+  height: 96rpx;
+  border-bottom: 1rpx solid #e4e4e4;
+  font-family: "MYingHeiPRC-W4";
+  font-size: 28rpx;
+}
+
+.section .sec-left{
+  padding-right: 70rpx;
+  line-height: 95rpx;
+  color: #333;
+  min-width: 70rpx;
+}
+.radio-item{
+  line-height: 95rpx;
+  position: relative;
+  padding-left: 32rpx;
+  padding-right: 70rpx;
+}
+
+.radio-item .seicon{
+  display: none;
+}
+.radio-item.select > .unicon{
+  display: none;
+}
+.radio-item.select > .seicon{
+  display: block;
+}
+.radio-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: initial;
+  min-width: initial;
+  padding-right: initial;
+  line-height: initial;
+  width: 20rpx;
+  height: 20rpx;
+}
+
+
+
+.section .plc{
+  color: #999;
+}
+
+.section input{
+  height: 95rpx;
+}
+
+.section .radio-box text,
+.section picker,
+.section input
+{
+   line-height: 95rpx;
+}
+.section .radio-box text{
+  position: relative;
+  padding-left: 28rpx;
+}
+
+.section .radio-box text::before,
+.section .radio-box text:before{
+  content: "";
+  width: 20rpx;
+  height: 20rpx;
+  display: block;
+  border: 2rpx solid #999999;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-radius:50%;
+}
+
+.section .radio-box text.select::after,
+.section .radio-box text.select:after{
+  content: "";
+  width: 15rpx;
+  height: 15rpx;
+  display: block;
+  background:  #333;
+  position: absolute;
+  top:50%;
+  left: 5rpx;
+  transform: translateY(-50%);
+  border-radius:50%;
+}
+.section .weui-input{
+  position: relative;
+}
+.section .weui-input .downicon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26rpx;
+}
+
+.defaultbtn{
+  background: #121314;
+  font-family: "MYingHeiPRC-W4";
+  font-size: 28rpx;
+  border-radius: 0;
+  box-shadow:5rpx 5rpx 20rpx rgba(24, 24, 24, 0.5);
+  color: #FFF;
+}
+.loadprogress{
+  background: #fff;
+  height: 5rpx;
+}
+.defaultpage{
+  background: #F4F4F4;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+}
+.defaultpage .defaulticon{
+  width: 344rpx;
+  height: 336rpx;
+  display: inline-block;
+  margin-top: 300rpx;
+}
+.defaultpage text{
+  display: block;
+  color: #999999;
+  margin-top:24rpx;
+}

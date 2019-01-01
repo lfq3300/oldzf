@@ -1,0 +1,37 @@
+<!--pages/carlist/details.wxml-->
+<loading hidden="{{!loginhidde}}">
+  页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+<view class='flex-column img-box' wx:if="{{!nullinfo}}">
+  <view class="banner">
+    <swiper bindchange="swipercar">
+      <block wx:for="{{carlist}}" wx:for-index="idx" wx:for-item="caritem">
+        <swiper-item>
+          <view class="title">{{caritem.name}}</view>
+          
+          <view class="img-banener">
+          <image src='{{caritem.imgUrl}}'  class="banner-img" mode='widthFix'></image>
+          </view>
+          <view class="btntitle flex-column">
+            <text>{{caritem.categoryIdName}}</text>
+            <text>厂商建议零售价￥{{caritem.price}}万起</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+      <image src='/images/icons/switch_left.png' mode='widthFix' class="bleft bicon"></image>
+     <image src='/images/icons/switch_right.png' mode='widthFix' class="bright bicon"></image>
+  </view>
+  <view class="jg" wx:if="{{!nullinfo}}"></view>
+  <view class="padding-border" wx:if="{{contentstatus}}">
+    <import src="../../wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:accontent.nodes}}" />
+  </view>
+</view>
+
+<button class='defaultbtn' bindtap='navyysj' wx:if="{{btnstatus}}">
+  预约试驾
+</button>
+<view wx:if="{{nullinfo}}" class='nullinfo'>暂无车型</view>
+</view>

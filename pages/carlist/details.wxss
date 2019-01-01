@@ -1,0 +1,14 @@
+/* pages/carlist/details.wxss */
+.padding-border image{
+  width: 100%;
+  margin-top: 50rpx;
+}
+button{
+  width: 202rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  position: fixed;
+  bottom:32rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}

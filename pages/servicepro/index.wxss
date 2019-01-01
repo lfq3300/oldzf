@@ -1,0 +1,26 @@
+/* pages/activity/activity.wxss */
+page{
+  background: #F4F4F4;
+}
+navigator{
+  margin-bottom: 11rpx;
+  width: 100%;
+}
+image{
+  width: 100%;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+}
+
+.padding-border > view{
+  margin-top:30rpx; 
+  background: #fff;
+  border-radius: 15rpx;
+}
+text{
+  line-height: 80rpx;
+  padding-left: 21rpx;
+  font-family: "MYingHeiPRC-W4";
+  color: #333333;
+  font-size: 36rpx;
+}

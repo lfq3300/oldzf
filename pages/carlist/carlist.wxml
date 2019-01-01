@@ -1,0 +1,29 @@
+<!--pages/carlist/carlist.wxml-->
+<loading hidden="{{!loginhidde}}">
+  页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+  <view class="logo-view">
+    <navigator url="/pages/index/index" open-type="switchTab">
+      <view class="logo-box">
+        <image class='logo-img' src='/images/icons/logo.png' mode="widthFix"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class='carlist padding-border'>
+    <view class='content'>
+      <navigator url='/pages/carlist/details?id={{item.id}}&categoryId={{item.categoryId}}' class='item' wx:for="{{carlist}}" wx:for-index="idx" wx:for-item="item">
+        <view class='item-content flex-default'>
+          <view class='item-left flex1'>
+            <text class='text_one'>{{item.categoryIdName}}</text>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='item-img'>
+            <image src='{{item.imgUrl}}' mode="widthFix"></image>
+          </view>
+        </view>
+        <view class='bottom'>厂商建议零售价￥{{item.price}}万起</view>
+      </navigator>
+    </view>
+  </view>
+</view>

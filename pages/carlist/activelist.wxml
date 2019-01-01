@@ -1,0 +1,37 @@
+<!--pages/carlist/carlist.wxml-->
+<loading hidden="{{!loginhidde}}">
+  页面加载中...
+</loading>
+<view hidden="{{loginhidde}}">
+  <view class="logo-view">
+    <navigator url="/pages/index/index" open-type="switchTab">
+      <view class="logo-box">
+        <image class='logo-img' src='/images/icons/logo.png' mode="widthFix"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class='car-level'>
+    <scroll-view scroll-x style="height:100rpx;width: auto;overflow:hidden;">
+      <view wx:for="{{cararr}}" wx:for-index="idx" wx:for-item="item" bindtap='bindcarlevel' 
+       class="{{carLevelId == item.id?'select':''}} tag" data-id='{{item.id}}'>
+        {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class='carlist padding-border'>
+    <view class='content'>
+      <navigator url='/pages/carlist/detailsactive?id={{item.id}}' class='item' wx:for="{{carlist}}" wx:for-index="idx" wx:for-item="item" hidden="{{!(item.levelId == carLevelId)}}">
+        <view class='item-content flex-default'>
+          <view class='item-left flex1'>
+            <text class='prefixname'>{{item.prefixName}}</text>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='item-img'>
+            <image src='{{item.imgUrl}}' mode="widthFix"></image>
+          </view>
+        </view>
+        <view class='bottom'>厂商建议零售价￥{{item.price}}万起</view>
+      </navigator>
+    </view>
+  </view>
+</view>
